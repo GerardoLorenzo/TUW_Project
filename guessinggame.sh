@@ -1,5 +1,5 @@
 function getcountoffiles {  			## This is the required function, return the number of files 
-	let count=$(ls -l | egrep '^-' | wc -l)	## in the current folder and saves it in the count variable.
+	let count=$(ls -al | egrep '^-' | wc -l)	## in the current folder and saves it in the count variable.
 }						## Folders are not included, only files
 
 ## Start Script
