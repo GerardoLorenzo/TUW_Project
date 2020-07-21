@@ -1,6 +1,6 @@
-function getcountoffiles {  			## This is the required function, return the number of files 
-	let count=$(ls -al | egrep '^-' | wc -l)	## in the current folder and saves it in the count variable.
-}						## Folders are not included, only files
+function getcountoffiles {  			 ## This is the required function, return the number of files 
+	let count=$(ls -al | egrep '^-' | wc -l) ## in the current folder and saves it in the count variable.
+}						 ## Folders are not included, only files
 
 ## Start Script
 clear
@@ -29,5 +29,5 @@ do
 	let intents=intents+1
 done
 
-echo "Pertect! You got it in "$intents" tries, there are "$count" files in this directory."
+echo "Perfect! You got it in "$intents" tries, there are "$count" files in this directory."
 echo ""
